@@ -82,7 +82,7 @@ function SnakeController ($scope, $rootScope) {
 			else {
 				snake.push(newSegment);
 			}
-		}, 50);
+		}, 200);
 	}
 }
 
@@ -95,6 +95,24 @@ snakeHU.src = 'img/snakeHU.png';
 
 var snakeHD = new Image();
 snakeHD.src = 'img/snakeHD.png';
+
+var snakeVU = new Image();
+snakeVU.src = 'img/snakeVU.png';
+
+var snakeVD = new Image();
+snakeVD.src = 'img/snakeVD.png';
+
+var snakeHeadR = new Image();
+snakeHeadR.src = 'img/snakeHeadR.png'
+
+var snakeHeadL = new Image();
+snakeHeadL.src = 'img/snakeHeadL.png'
+
+var snakeHeadD = new Image();
+snakeHeadD.src = 'img/snakeHeadD.png'
+
+var snakeHeadU = new Image();
+snakeHeadU.src = 'img/snakeHeadU.png'
 
 var snakeWidth = 20;
 var canvasWidth = $('.span8').width();
@@ -121,49 +139,64 @@ var dot = randomiseDot();
 var wiggler = 0;
 
 var drawSnake = function drawSnake() {
-	canvasContext.fillStyle   = '#00f';
-	for(var i = 0; i < snake.length; i++) {
-		var snakeImage = (i+wiggler)%2===0 ? snakeHU : snakeHD;
-		canvasContext.drawImage(snakeImage, snake[i].x,snake[i].y, snakeWidth, snakeWidth);
+canvasContext.fillStyle = '#00f';
+
+var head = canvasContext.drawImage(snakeHead, snake[snake.length - 1].x,snake[snake.length - 1].y, snakeWidth, snakeWidth);
+
+if(newDirection==='right' || newDirection === 'left'){
+	for(var i = 0; i < snake.length-1; i++) {
+	var snakeImage = (i+wiggler)%2===0 ? snakeHU : snakeHD;
+	canvasContext.drawImage(snakeImage, snake[i].x,snake[i].y, snakeWidth, snakeWidth);
 	}
-	wiggler = wiggler ? 0 : 1;
-};
+	};
+if(newDirection==='up' || newDirection === 'down'){
+	for(var i = 0; i < snake.length-1; i++) {
+	var snakeImage = (i+wiggler)%2===0 ? snakeVU : snakeVD;
+	canvasContext.drawImage(snakeImage, snake[i].x,snake[i].y, snakeWidth, snakeWidth);
+	}
+	};
+wiggler = wiggler ? 0 : 1;
+}; 
+
 
 var drawDot = function drawDot () {
 	canvasContext.drawImage(appleImage, dot.x,dot.y,snakeWidth,snakeWidth);
 };
-
-
 
 var clearCanvas = function clearCanvas () {
 	canvasContext.clearRect(0, 0, canvasElement.width, canvasElement.height);
 };
 
 var newDirection = 'right';
+var snakeHead = snakeHeadR
 
 $(document).keydown(function (event) {
 	switch(event.keyCode) {
 		case 37:
 			if(currentDirection !== 'right') {
 				newDirection = 'left';
+				snakeHead = snakeHeadL;
 			}
 			event.preventDefault();
 			break;
 		case 38:
 			if(currentDirection !== 'down') {
 				newDirection = 'up';
+				snakeHead = snakeHeadU;
 			}
 			event.preventDefault();
 			break;
 		case 39:
 			if(currentDirection !== 'left') {
 				newDirection = 'right';
+				snakeHead = snakeHeadR;
 			}
 			event.preventDefault();
 			break;
 		case 40:
 			if(currentDirection !== 'up') {
 				newDirection = 'down';
+				snakeHead = snakeHeadD;
 			}
 			event.preventDefault();
 			break;

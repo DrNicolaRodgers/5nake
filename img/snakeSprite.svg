@@ -9,12 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="321.28571"
-   height="281.28571"
+   width="20"
+   height="20"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="snakeSprite.svg"
+   inkscape:export-filename="C:\Users\Nicola\Documents\GitHub\5nake\img\snakeHD.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="310.65229"
-     inkscape:cy="167.15436"
+     inkscape:zoom="3.959798"
+     inkscape:cx="80.714286"
+     inkscape:cy="35.213072"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -35,11 +38,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="463"
-     inkscape:window-height="453"
-     inkscape:window-x="413"
-     inkscape:window-y="98"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid2991"
@@ -66,49 +69,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-79.5,-91.862183)">
+     transform="translate(-79.5,-353.1479)">
     <g
        id="g2997"
-       style="fill:#008000;stroke:#008000">
+       style="fill:#008000;stroke:#008000"
+       transform="matrix(0,-0.12627804,0.12180984,0,70.057421,383.57946)">
       <path
          sodipodi:nodetypes="czcczcc"
          inkscape:connector-curvature="0"
          id="path2993"
          d="m 240,132.36218 c 0,0 -40,-39.999997 -80,-39.999997 -40,0 -80,39.999997 -80,39.999997 l 0,77.14286 c 0,0 40,-40 80,-40 40,0 80,40 80,40 z"
          style="fill:#008000;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
-    <g
-       style="fill:#008000;stroke:#008000"
-       id="g3007"
-       transform="matrix(1,0,0,-1,160.28571,302.15294)">
-      <path
-         style="fill:#008000;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 240,132.36218 c 0,0 -40,-39.999997 -80,-39.999997 -40,0 -80,39.999997 -80,39.999997 l 0,77.14286 c 0,0 40,-40 80,-40 40,0 80,40 80,40 z"
-         id="path3009"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="czcczcc" />
-    </g>
-    <g
-       transform="matrix(0,1,1,0,167.92353,132.6479)"
-       id="g3011"
-       style="fill:#008000;stroke:#008000">
-      <path
-         sodipodi:nodetypes="czcczcc"
-         inkscape:connector-curvature="0"
-         id="path3013"
-         d="m 240,132.36218 c 0,0 -40,-39.999997 -80,-39.999997 -40,0 -80,39.999997 -80,39.999997 l 0,77.14286 c 0,0 40,-40 80,-40 40,0 80,40 80,40 z"
-         style="fill:#008000;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    </g>
-    <g
-       style="fill:#008000;stroke:#008000"
-       id="g3015"
-       transform="matrix(0,1,-1,0,311.21932,132.6479)">
-      <path
-         style="fill:#008000;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 240,132.36218 c 0,0 -40,-39.999997 -80,-39.999997 -40,0 -80,39.999997 -80,39.999997 l 0,77.14286 c 0,0 40,-40 80,-40 40,0 80,40 80,40 z"
-         id="path3017"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="czcczcc" />
     </g>
   </g>
 </svg>
